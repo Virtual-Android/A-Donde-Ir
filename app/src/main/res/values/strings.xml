@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">A Donde Ir</string>
+    <string name="descripcion_lugar">Descripcion del lugar</string>
+    <string name="nombre_del_lugar">Nombre del Lugar</string>
+    <string name="descripcion_detellada">Descripcion detellada</string>
+    <string name="ciudad_de_ubicacion">Ciudad de Ubicación</string>
+    <string name="temperatura">temperatura</string>
+    <string name="imagen_del_lugar">Imagen del lugar</string>
+    <string name="logo_de_a_donde_ir">Logo de A Donde Ir</string>
+    <string name="flecha_en_el_boton_de_regreso">flecha en el boton de regreso</string>
+</resources>
