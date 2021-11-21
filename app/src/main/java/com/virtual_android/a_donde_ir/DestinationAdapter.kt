@@ -31,7 +31,9 @@ class DestinationAdapter(
 
     inner class DestinationViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         private var nameLabel: TextView = itemView.findViewById(R.id.name_destination)
+        private var descriptionLabel: TextView = itemView.findViewById(R.id.short_description)
         private var imageView: ImageView = itemView.findViewById(R.id.image_item)
+        private var rateLabel: TextView = itemView.findViewById(R.id.text_rate)
         private var currentDestination: Destination? = null
 
         init {
@@ -46,6 +48,8 @@ class DestinationAdapter(
             currentDestination = destination
 
             nameLabel.text = destination.name
+            descriptionLabel.text = destination.description
+            rateLabel.text = destination.rate.toString()
 
             Glide.with(context)
                 .load(destination.imageUrl)

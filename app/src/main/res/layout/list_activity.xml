@@ -12,11 +12,12 @@
         android:id="@+id/text_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="COMIENZA A BUSCAR"
+        android:text="COMIENZA A BUSCAR!"
         android:gravity="center"
         android:textColor="#1E094B"
         android:textSize="30dp"
         android:textFontWeight="800"
+        android:fontFamily="sans-serif-black"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
