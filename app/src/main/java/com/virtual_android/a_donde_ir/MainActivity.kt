@@ -17,11 +17,11 @@ class MainActivity : AppCompatActivity() {
         val description = intent.getStringExtra(ListActivity.KEY_DESCRIPTION)
         val imageUrl = intent.getStringExtra(ListActivity.KEY_IMAGE)
 
-        var textViewName: TextView = findViewById(R.id.nombreView)
-        var textViewDescription: TextView  = findViewById(R.id.destination_description)
-        var imgView: ImageView = findViewById(R.id.image_lugar_View)
+        val textViewName: TextView = findViewById(R.id.nombreView)
+        val textViewDescription: TextView  = findViewById(R.id.destination_description)
+        val imgView: ImageView = findViewById(R.id.image_lugar_View)
 
-        var imgButton: ImageButton = findViewById(R.id.regreso_Button)
+        val imgButton: ImageButton = findViewById(R.id.regreso_Button)
 
         textViewName.text = name
         textViewDescription.text = description
