@@ -13,4 +13,6 @@
     <color name="light_blue_A400">#FF00B0FF</color>
     <color name="black_overlay">#66000000</color>
     <color name="name_place">#24234f</color>
+    <color name="titule">#0A0A12</color>
+
 </resources>
