@@ -4,5 +4,7 @@ data class Destination(
     val imageUrl: String,
     val name: String,
     val description: String,
-    val rate: Int?
+    val rate: Int?,
+    val temepature: String,
+    val location: String,
 )

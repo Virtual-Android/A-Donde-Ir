@@ -52,6 +52,8 @@ class ListActivity : AppCompatActivity() {
             putExtra(KEY_NAME, destination.name)
             putExtra(KEY_DESCRIPTION, destination.description)
             putExtra(KEY_IMAGE, destination.imageUrl)
+            putExtra(KEY_UBICACION, destination.location)
+            putExtra(KEY_TEMPERATURE, destination.temepature)
         }
 
         startActivity(intent)
@@ -63,6 +65,7 @@ class ListActivity : AppCompatActivity() {
         const val KEY_DESCRIPTION = "destination_description"
         const val KEY_IMAGE = "image_lugar_View"
         const val KEY_TEMPERATURE = "temperaturaView"
+        const val KEY_UBICACION = "ciudadView"
     }
 
     private fun initDataFromFile() {
@@ -76,7 +79,8 @@ class ListActivity : AppCompatActivity() {
                     destinationJson.getString("name"),
                     destinationJson.getString("description"),
                     destinationJson.getInt("rate"),
-                    destinationJson.getString("temperature")
+                    destinationJson.getString("temperature"),
+                    destinationJson.getString("ubicacion")
                 )
                 Log.d(TAG, "generateDestinations: $destination")
                 mDestinations.add(destination)

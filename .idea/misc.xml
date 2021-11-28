@@ -3,9 +3,15 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Estudios/Mision_Tic/Ciclo_4/Fundamentos_Movil/A_donde_ir/app/src/main/res/drawable/corner_all_roud_white.xml" value="0.2203125" />
+        <entry key="..\:/Estudios/Mision_Tic/Ciclo_4/Fundamentos_Movil/A_donde_ir/app/src/main/res/drawable/corners_round_top.xml" value="0.2203125" />
+        <entry key="..\:/Estudios/Mision_Tic/Ciclo_4/Fundamentos_Movil/A_donde_ir/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2203125" />
+        <entry key="..\:/Estudios/Mision_Tic/Ciclo_4/Fundamentos_Movil/A_donde_ir/app/src/main/res/drawable/ic_point_map.xml" value="0.19166666666666668" />
+        <entry key="..\:/Estudios/Mision_Tic/Ciclo_4/Fundamentos_Movil/A_donde_ir/app/src/main/res/drawable/ic_temperture.xml" value="0.2203125" />
+        <entry key="..\:/Estudios/Mision_Tic/Ciclo_4/Fundamentos_Movil/A_donde_ir/app/src/main/res/drawable/logo_app.xml" value="0.2203125" />
         <entry key="..\:/Estudios/Mision_Tic/Ciclo_4/Fundamentos_Movil/A_donde_ir/app/src/main/res/layout/activity_main.xml" value="0.22" />
-        <entry key="..\:/Estudios/Mision_Tic/Ciclo_4/Fundamentos_Movil/A_donde_ir/app/src/main/res/layout/element_layout.xml" value="0.20416666666666666" />
-        <entry key="..\:/Estudios/Mision_Tic/Ciclo_4/Fundamentos_Movil/A_donde_ir/app/src/main/res/layout/fragment_detail.xml" value="0.2" />
+        <entry key="..\:/Estudios/Mision_Tic/Ciclo_4/Fundamentos_Movil/A_donde_ir/app/src/main/res/layout/element_layout.xml" value="0.22" />
+        <entry key="..\:/Estudios/Mision_Tic/Ciclo_4/Fundamentos_Movil/A_donde_ir/app/src/main/res/layout/fragment_detail.xml" value="0.33" />
         <entry key="..\:/Estudios/Mision_Tic/Ciclo_4/Fundamentos_Movil/A_donde_ir/app/src/main/res/layout/list_activity.xml" value="0.1" />
         <entry key="..\:/Users/SergioEscudero/Documents/Websites/MINTIC/VirtualAndroid/A-Donde-Ir/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.20833333333333334" />
         <entry key="..\:/Users/SergioEscudero/Documents/Websites/MINTIC/VirtualAndroid/A-Donde-Ir/app/src/main/res/drawable/corner_all_roud_white.xml" value="0.20833333333333334" />
