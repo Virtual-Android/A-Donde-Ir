@@ -5,7 +5,11 @@
     <string name="descripcion_detellada">Descripcion detellada</string>
     <string name="ciudad_de_ubicacion">Ciudad de Ubicación</string>
     <string name="temperatura">temperatura</string>
-    <string name="imagen_del_lugar">Imagen del lugar</string>
     <string name="logo_de_a_donde_ir">Logo de A Donde Ir</string>
     <string name="flecha_en_el_boton_de_regreso">flecha en el boton de regreso</string>
+    <string name="imagen_del_lugar">Imagen del lugar</string>
+    <string name="estrella_de_puntuacion">Estrella de puntuacion</string>
+    <string name="numero_estrellas">5</string>
+    <string name="prueba_de_texto">Prueba de texto36273 I have a TextView that I want to limit characters of it. Actually, I can do this but the thing that I\'m looking for is how to add three dots (…) at the end of string. This one shows the text has continue. This is my XML but there is no dots although it limit my text.</string>
+    <string name="icono_de_ubicacion">icono de ubicacion</string>
 </resources>
