@@ -7,10 +7,11 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <androidx.fragment.app.FragmentContainerView
+    <!--<androidx.fragment.app.FragmentContainerView
         android:id="@+id/fragmentContainerViewDetail"
         android:name="com.virtual_android.a_donde_ir.DetailFragment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent" />-->
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
