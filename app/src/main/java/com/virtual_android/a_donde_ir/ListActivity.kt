@@ -10,12 +10,4 @@ class ListActivity : AppCompatActivity() {
         setContentView(R.layout.list_activity)
     }
 
-    companion object {
-        const val KEY_NAME = "nombreView"
-        const val KEY_DESCRIPTION = "destination_description"
-        const val KEY_IMAGE = "image_lugar_View"
-        const val KEY_TEMPERATURE = "temperaturaView"
-        const val KEY_UBICACION = "ciudadView"
-    }
-
 }
