@@ -52,6 +52,8 @@ class ListActivity : AppCompatActivity() {
             putExtra(KEY_NAME, destination.name)
             putExtra(KEY_DESCRIPTION, destination.description)
             putExtra(KEY_IMAGE, destination.imageUrl)
+            putExtra(KEY_UBICACION, destination.location)
+            putExtra(KEY_TEMPERATURE, destination.temepature)
         }
 
         startActivity(intent)
@@ -62,19 +64,23 @@ class ListActivity : AppCompatActivity() {
         const val KEY_NAME = "nombreView"
         const val KEY_DESCRIPTION = "destination_description"
         const val KEY_IMAGE = "image_lugar_View"
+        const val KEY_TEMPERATURE = "temperaturaView"
+        const val KEY_UBICACION = "ciudadView"
     }
 
     private fun initDataFromFile() {
-        val contactsString = readContactJsonFile()
+        val destinationString = readDestinationsJsonFile()
         try {
-            val destinationsJson = JSONArray(contactsString)
+            val destinationsJson = JSONArray(destinationString)
             for (i in 0 until destinationsJson.length()) {
                 val destinationJson = destinationsJson.getJSONObject(i)
                 val destination = Destination(
                     destinationJson.getString("imageUrl"),
                     destinationJson.getString("name"),
                     destinationJson.getString("description"),
-                    destinationJson.getInt("rate")
+                    destinationJson.getInt("rate"),
+                    destinationJson.getString("temperature"),
+                    destinationJson.getString("ubicacion")
                 )
                 Log.d(TAG, "generateDestinations: $destination")
                 mDestinations.add(destination)
@@ -86,7 +92,7 @@ class ListActivity : AppCompatActivity() {
         }
     }
 
-    private fun readContactJsonFile(): String? {
+    private fun readDestinationsJsonFile(): String? {
         var destinationsString: String? = null
         try {
             val inputStream = assets.open("mock_destinations.json")
