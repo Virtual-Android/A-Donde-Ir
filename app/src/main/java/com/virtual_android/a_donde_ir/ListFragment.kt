@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ImageView
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.RecyclerView
@@ -35,9 +36,15 @@ class ListFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        val btnSettings = view.findViewById<ImageView>(R.id.setting_button)
+
         recycler = view.findViewById(R.id.destination_list)
         setupRecyclerView(view)
         initDataFromFile(view)
+
+        btnSettings.setOnClickListener {
+            navigateToSettings()
+        }
     }
 
     private fun setupRecyclerView(view: View) {
@@ -78,7 +85,7 @@ class ListFragment : Fragment() {
     }
 
     companion object {
-        private val TAG = MainActivity::class.java.simpleName
+        private val TAG = ListActivity::class.java.simpleName
 //        const val KEY_NAME = "nombreView"
 //        const val KEY_DESCRIPTION = "destination_description"
 //        const val KEY_IMAGE = "image_lugar_View"
@@ -125,6 +132,10 @@ class ListFragment : Fragment() {
         }
 
         return destinationsString
+    }
+
+    fun navigateToSettings() {
+        findNavController().navigate(R.id.action_listFragment_to_settingsFragment)
     }
 
 }
