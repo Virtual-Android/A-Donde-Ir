@@ -3,24 +3,32 @@
     "name": "Minas de sal de neón",
     "description": "Nemocón es un pueblo en Cundinamarca famoso por su gran actividad minera. A pocos kilómetros de Bogotá, se puede llegar",
     "rate": 4,
-    "imageUrl": "https://www.colombia.co/wp-content/uploads/2017/09/Salt_Mine_Nemocon_Colombia_5743986824-768x510.jpg"
+    "imageUrl": "https://www.colombia.co/wp-content/uploads/2017/09/Salt_Mine_Nemocon_Colombia_5743986824-768x510.jpg",
+    "temperature": "35 °C",
+    "ubicacion": "Cundinamarca"
   },
   {
     "name": "Parque Nacional Natural El Tuparro",
     "description": "El Parque Nacional Natural El Tuparro es una reserva natural de gran extensión en el departamento de Vichada",
     "rate": 3,
-    "imageUrl": "https://www.colombia.co/wp-content/uploads/2017/09/DSC05257-768x512.jpg"
+    "imageUrl": "https://www.colombia.co/wp-content/uploads/2017/09/DSC05257-768x512.jpg",
+    "temperature": "34 °C",
+    "ubicacion": "Vichada"
   },
   {
     "name": "Punta Gallinas, Guajira",
     "description": "Visitar el extremo norte del país y del continente suramericano es una experiencia inigualable. Punta Gallinas ",
     "rate": 4,
-    "imageUrl": "https://www.colombia.co/wp-content/uploads/2017/09/P1080747-768x603.png"
+    "imageUrl": "https://www.colombia.co/wp-content/uploads/2017/09/P1080747-768x603.png",
+    "temperature": "30 °C",
+    "ubicacion": "Guajira"
   },
   {
     "name": "Caño Cristales",
     "description": "Ubicado en la sierra de la Macarena en el Meta, se encuentra Caño Cristales, llamado por muchos portales de turismo a nivel internacional como el río más hermoso del mundo",
     "rate": 5,
-    "imageUrl": "https://www.colombia.co/wp-content/uploads/2017/09/cano_cristales-768x510.png"
+    "imageUrl": "https://www.colombia.co/wp-content/uploads/2017/09/cano_cristales-768x510.png",
+    "temperature": "28 °C",
+    "ubicacion": "Meta"
   }
 ]

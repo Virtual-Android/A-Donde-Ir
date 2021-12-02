@@ -2,10 +2,35 @@
     <string name="app_name">A Donde Ir</string>
     <string name="descripcion_lugar">Descripcion del lugar</string>
     <string name="nombre_del_lugar">Nombre del Lugar</string>
-    <string name="descripcion_detellada">Descripcion detellada</string>
+    <string name="descripcion_detellada">Descripcion detellada Descripcion detelladaDescripcion detelladaDescripcion detelladaDescripcion detelladaDescripcion detelladaDescripcion detelladaDescripcion detelladaDescripcion detelladaDescripcion detellada</string>
     <string name="ciudad_de_ubicacion">Ciudad de Ubicación</string>
     <string name="temperatura">temperatura</string>
-    <string name="imagen_del_lugar">Imagen del lugar</string>
     <string name="logo_de_a_donde_ir">Logo de A Donde Ir</string>
     <string name="flecha_en_el_boton_de_regreso">flecha en el boton de regreso</string>
+    <string name="imagen_del_lugar">Imagen del lugar</string>
+    <string name="estrella_de_puntuacion">Estrella de puntuacion</string>
+    <string name="numero_estrellas">5</string>
+    <string name="prueba_de_texto">Prueba de texto36273 I have a TextView that I want to limit characters of it. Actually, I can do this but the thing that I\'m looking for is how to add three dots (…) at the end of string. This one shows the text has continue. This is my XML but there is no dots although it limit my text.</string>
+    <string name="icono_de_ubicacion">icono de ubicacion</string>
+    <string name="icono_de_termometro">icono de termometro</string>
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="autorizar_sonido">Autorizar sonido de notifcaciones</string>
+    <string name="autorizar_notificaciones">Autorizar notificaciones</string>
+    <string name="cofiguraciones">Cofiguraciones</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="comienza_a_buscar">COMIENZA A BUSCAR!</string>
 </resources>
