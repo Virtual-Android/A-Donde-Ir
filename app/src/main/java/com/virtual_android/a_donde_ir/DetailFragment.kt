@@ -1,5 +1,7 @@
 package com.virtual_android.a_donde_ir
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -34,6 +36,7 @@ class DetailFragment : Fragment() {
         val temperatureView : TextView = view.findViewById(R.id.temperaturaView)
         val ubicacionView : TextView = view.findViewById(R.id.ciudadView)
         val btnRegresar: ImageButton = view.findViewById(R.id.regreso_Button)
+        val btnMaps: ImageButton = view.findViewById(R.id.iconoMapa)
 
         textViewName.text = args.destination.name
         textViewDescription.text = args.destination.description
@@ -46,9 +49,26 @@ class DetailFragment : Fragment() {
         btnRegresar.setOnClickListener{
             navigateToList()
         }
+
+        btnMaps.setOnClickListener{
+            launchMap(args.destination.latitude,  args.destination.longitude)
+        }
     }
 
     private fun navigateToList() {
         findNavController().navigate(R.id.action_detailFragment_to_listFragment)
+    }
+
+    private fun launchMap(lat: String, lon: String)
+    {
+        val geo = "geo:$lat,$lon"
+        val gmmIntentUri = Uri.parse(geo)
+        val mapIntent = Intent(Intent.ACTION_VIEW, gmmIntentUri)
+        mapIntent.setPackage("com.google.android.apps.maps")
+        activity?.let {
+            mapIntent.resolveActivity(it.packageManager)?.let {
+                startActivity(mapIntent)
+            }
+        }
     }
 }

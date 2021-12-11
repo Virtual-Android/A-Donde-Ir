@@ -105,7 +105,9 @@ class ListFragment : Fragment() {
                     destinationJson.getString("description"),
                     destinationJson.getInt("rate"),
                     destinationJson.getString("temperature"),
-                    destinationJson.getString("ubicacion")
+                    destinationJson.getString("ubicacion"),
+                    destinationJson.getString("latitude"),
+                    destinationJson.getString("longitude")
                 )
                 Log.d(TAG, "generateDestinations: $destination")
                 mDestinations.add(destination)

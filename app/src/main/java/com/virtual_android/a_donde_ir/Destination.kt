@@ -10,12 +10,17 @@ data class Destination(
     val rate: Int?,
     val temepature: String,
     val location: String,
+    val latitude: String,
+    val longitude: String
+
 ): Parcelable {
     constructor(parcel: Parcel) : this(
         parcel.readString().toString(),
         parcel.readString().toString(),
         parcel.readString().toString(),
         parcel.readValue(Int::class.java.classLoader) as? Int,
+        parcel.readString().toString(),
+        parcel.readString().toString(),
         parcel.readString().toString(),
         parcel.readString().toString()
     ) {
@@ -28,6 +33,8 @@ data class Destination(
         parcel.writeValue(rate)
         parcel.writeString(temepature)
         parcel.writeString(location)
+        parcel.writeString(latitude)
+        parcel.writeString(longitude)
     }
 
     override fun describeContents(): Int {
