@@ -1,11 +1,13 @@
 [
   {
-    "name": "Minas de sal de neón",
+    "name": "Minas de sal de nemocón",
     "description": "Nemocón es un pueblo en Cundinamarca famoso por su gran actividad minera. A pocos kilómetros de Bogotá, se puede llegar",
     "rate": 4,
     "imageUrl": "https://www.colombia.co/wp-content/uploads/2017/09/Salt_Mine_Nemocon_Colombia_5743986824-768x510.jpg",
     "temperature": "35 °C",
-    "ubicacion": "Cundinamarca"
+    "ubicacion": "Cundinamarca",
+    "latitude": "5.0641818",
+    "longitude": "-73.8737804"
   },
   {
     "name": "Parque Nacional Natural El Tuparro",
@@ -13,7 +15,9 @@
     "rate": 3,
     "imageUrl": "https://www.colombia.co/wp-content/uploads/2017/09/DSC05257-768x512.jpg",
     "temperature": "34 °C",
-    "ubicacion": "Vichada"
+    "ubicacion": "Vichada",
+    "latitude": "5.2550631",
+    "longitude": "-69.0643853"
   },
   {
     "name": "Punta Gallinas, Guajira",
@@ -21,7 +25,9 @@
     "rate": 4,
     "imageUrl": "https://www.colombia.co/wp-content/uploads/2017/09/P1080747-768x603.png",
     "temperature": "30 °C",
-    "ubicacion": "Guajira"
+    "ubicacion": "Guajira",
+    "latitude": "12.4579765",
+    "longitude": "-71.6701049"
   },
   {
     "name": "Caño Cristales",
@@ -29,6 +35,18 @@
     "rate": 5,
     "imageUrl": "https://www.colombia.co/wp-content/uploads/2017/09/cano_cristales-768x510.png",
     "temperature": "28 °C",
-    "ubicacion": "Meta"
+    "ubicacion": "Meta",
+    "latitude": "2.2622298",
+    "longitude":"-73.7967977"
+  },
+  {
+    "name": "Parque Arví",
+    "description": "Parque ecoturístico con rutas de senderismo, puestos de comida, teleférico y deportes de aventura. Cercano al parque ecológico piedras blancas",
+    "rate": 5,
+    "imageUrl": "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/09/ea/a3/ce.jpg",
+    "temperature": "17 °C",
+    "ubicacion": "Antioquia",
+    "latitude": "6.2809552",
+    "longitude":"-75.503656"
   }
 ]
