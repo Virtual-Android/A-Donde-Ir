@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.RecyclerView
@@ -24,6 +25,7 @@ class ListFragment : Fragment() {
     private lateinit var mDestinations: ArrayList<Destination>
     private lateinit var mAdapter: DestinationAdapter
     private lateinit var recycler: RecyclerView
+    private lateinit var viewModel: MainViewModel
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -37,10 +39,12 @@ class ListFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val btnSettings = view.findViewById<ImageView>(R.id.setting_button)
+        viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
 
         recycler = view.findViewById(R.id.destination_list)
         setupRecyclerView(view)
-        initDataFromFile(view)
+        //initDataFromFile(view)
+        initDataFromService()
 
         btnSettings.setOnClickListener {
             navigateToSettings()
@@ -69,28 +73,36 @@ class ListFragment : Fragment() {
         }
     }
 
-    private fun navigateToDetail(destination: Destination) {
-        /* val intent = Intent(this, MainActivity::class.java).apply {
-            putExtra(KEY_NAME, destination.name)
-            putExtra(KEY_DESCRIPTION, destination.description)
-            putExtra(KEY_IMAGE, destination.imageUrl)
-            putExtra(KEY_UBICACION, destination.location)
-            putExtra(KEY_TEMPERATURE, destination.temepature)
-        }
-
-        startActivity(intent) */
-        val action = ListFragmentDirections.actionListFragmentToDetailFragment(destination)
+    private fun navigateToDetail(destination: Destination) {        val action = ListFragmentDirections.actionListFragmentToDetailFragment(destination)
         findNavController().navigate(action)
-        // findNavController().navigate(R.id.action_listFragment_to_detailFragment)
     }
 
     companion object {
         private val TAG = ListActivity::class.java.simpleName
-//        const val KEY_NAME = "nombreView"
-//        const val KEY_DESCRIPTION = "destination_description"
-//        const val KEY_IMAGE = "image_lugar_View"
-//        const val KEY_TEMPERATURE = "temperaturaView"
-//        const val KEY_UBICACION = "ciudadView"
+    }
+
+    private fun initDataFromService() {
+        viewModel.getPois().observe(this, { destinations ->
+            Log.d("POIS_FRAGMENT", destinations.size.toString())
+            if (destinations.isNotEmpty()) {
+                for (item in destinations) {
+                    Log.d("INDICE", item.toString())
+                    val destination = Destination(
+                        item.imageUrl,
+                        item.name,
+                        item.description,
+                        item.rate,
+                        item.temperature,
+                        item.ubicacion,
+                        item.latitude,
+                        item.longitude
+                    )
+                    mDestinations.add(destination)
+                }
+
+                mAdapter.notifyDataSetChanged()
+            }
+        })
     }
 
     private fun initDataFromFile(view: View) {

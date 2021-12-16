@@ -11,24 +11,24 @@ import androidx.lifecycle.ViewModelProvider
 
 class ListActivity : AppCompatActivity() {
 
-    private lateinit var viewModel: MainViewModel
+    // private lateinit var viewModel: MainViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.list_activity)
 
-        viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
+        // viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
 
-        observeLiveData()
+        // observeLiveData()
 
     }
 
-    private fun observeLiveData() {
+    /* private fun observeLiveData() {
         viewModel.getPois().observe(this, {
-            Log.d("TAG", it.toString())
+            Log.d("POIS", it.toString())
         })
 
-    }
+    } */
 
 
 }

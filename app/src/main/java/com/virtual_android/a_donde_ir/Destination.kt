@@ -8,8 +8,8 @@ data class Destination(
     val name: String,
     val description: String,
     val rate: Int?,
-    val temepature: String,
-    val location: String,
+    val temperature: String,
+    val ubicacion: String,
     val latitude: String,
     val longitude: String
 
@@ -31,8 +31,8 @@ data class Destination(
         parcel.writeString(name)
         parcel.writeString(description)
         parcel.writeValue(rate)
-        parcel.writeString(temepature)
-        parcel.writeString(location)
+        parcel.writeString(temperature)
+        parcel.writeString(ubicacion)
         parcel.writeString(latitude)
         parcel.writeString(longitude)
     }

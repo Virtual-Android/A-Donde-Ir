@@ -8,22 +8,18 @@ import kotlinx.coroutines.launch
 
 class MainViewModel : ViewModel () {
 
-    private var poiList = MutableLiveData<List<Poi>>()
+    private var poiList = MutableLiveData<List<Destination>>()
     private var apiServices = RetroFitFactory.apiServices()
 
     init {
         requestPois()
     }
 
-    fun getPois(): LiveData<List<Poi>> = poiList
+    fun getPois(): LiveData<List<Destination>> = poiList
 
     private fun requestPois() {
         viewModelScope.launch {
-
             poiList.value = apiServices.requestPois()
         }
-
-
-
     }
 }

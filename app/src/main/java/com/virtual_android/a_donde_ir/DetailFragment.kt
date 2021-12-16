@@ -40,8 +40,8 @@ class DetailFragment : Fragment() {
 
         textViewName.text = args.destination.name
         textViewDescription.text = args.destination.description
-        temperatureView.text = args.destination.temepature
-        ubicacionView.text = args.destination.location
+        temperatureView.text = args.destination.temperature
+        ubicacionView.text = args.destination.ubicacion
         Glide.with(this)
             .load(args.destination.imageUrl)
             .into(imgView)
