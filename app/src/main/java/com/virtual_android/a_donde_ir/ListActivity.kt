@@ -1,34 +1,36 @@
 package com.virtual_android.a_donde_ir
 
 import android.os.Bundle
-import android.util.Log
-import android.view.PointerIcon
-import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.findNavController
-import androidx.navigation.fragment.findNavController
-import androidx.lifecycle.ViewModelProvider
+import android.view.Menu
+import android.view.MenuInflater
+import android.view.MenuItem
 
 class ListActivity : AppCompatActivity() {
-
-    // private lateinit var viewModel: MainViewModel
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.list_activity)
-
-        // viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
-
-        // observeLiveData()
-
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
     }
 
-    /* private fun observeLiveData() {
-        viewModel.getPois().observe(this, {
-            Log.d("POIS", it.toString())
-        })
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        val inflater: MenuInflater = menuInflater
+        inflater.inflate(R.menu.menu_settings, menu)
+        return true
+    }
 
-    } */
+    override fun onOptionsItemSelected(item: MenuItem) = when (item.itemId) {
+        R.id.action_settings -> {
+            // User chose the "Settings" item, show the app settings UI...
 
+            true
+        }
+        else -> {
+            // If we got here, the user's action was not recognized.
+            // Invoke the superclass to handle it.
+            super.onOptionsItemSelected(item)
+        }
+    }
 
 }
